@@ -1,16 +1,41 @@
+
+
 $(document).ready(function() {
     $('.nav-tab').hover(function() {
         $(this).animate({ fontSize: "4em" }, 100);
+        $(this).parent().addClass("active");
     });
+
     $('.nav-tab').mouseleave(function() {
     	$(this).animate({ fontSize: "3em" }, 100);
+    	$(".nav").find(".active").removeClass("active");
     });
-    $('#titleHeading').fadeTo(2000,1).animate({ fontSize: "23em" }, 500).animate({ fontSize: "15em" }, 1500).delay(5000 , function() {
-        // Callback function: This is called when 'animation-one'
-        // is finished.
-        $('#titleinfo').fadeTo(3000,1);
+
+  	$('.glitch').glitch({
+  		offset: [0, 12],
+	});
+
+    $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing');
+	});
+
+	$(".nav a").on("click", function(){
+   		$(".nav").find(".active").removeClass("active");
+	});
+
+    $('#titleinfo').fadeTo(500,1).delay(1000 , function() {
+        $('#one').fadeTo(500,1);
+        $('#two').fadeTo(3000,1);
+        $('#three').fadeTo(4000,1);
+        $('#four').fadeTo(5000,1);
     });
-    
      
 });
 
