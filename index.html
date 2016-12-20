@@ -14,9 +14,13 @@
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"/>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald"/>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid Serif"/>
+		<link href="jquery-glitch.css" rel="stylesheet">
 		<script src="jquery.js"> </script>
 		<script src="bootstrap/js/bootstrap.js"> </script>
 		<script src="index.js"> </script>
+		<script src="//code.jquery.com/jquery.min.js"></script>
+		<script src="jquery-glitch.js"></script>
+
 
 
 	</head>
@@ -31,9 +35,9 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li><a href="projects.html" class="nav-tab">Projects</a></li>
-		        <li><a href="about.html" class="nav-tab">About</a></li>
-		        <li><a href="images/resume.pdf" target="_blank" class="nav-tab">Resume</a></li>
+		        <li><a href="#projecttitle" class="active nav-tab" >Projects</a></li>
+		        <li><a href="#abouttag" class="nav-tab">About</a></li>
+		        <li><a href="resume.pdf" target="_blank" class="nav-tab">Resume</a></li>
 		        <li><a href="fun.html" class="nav-tab">Fun</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -43,22 +47,192 @@
 
 		<div class = background>
 			<center>
-				<div class=title>
-					<h1 id = titleHeading > Hans Kumar </h1>
+				<div class = glitch id = centerDIV>
+					<span class = layer>
+						<h1 id = titleHeading style= "color: #59323C">
+						Hans Kumar 
+						</h1>
+					</span>
+					<span class = display>
+						<h1 id = titleHeading > Hans Kumar </h1>
+					</span>
 				</div>
-				<h3 id = titleinfo> Sophomore Mechanical Engineer at Carnegie Mellon </h3>
+				<div id = midDIV>
+					<h3 id = titleinfo> 
+						<span id ="one">
+						Student 
+							<span id = "period">
+							.
+							</span>
+						</span>
+						<span id ="two">
+						Engineer 
+							<span id = "period">
+							.
+							</span>
+						</span>
+						<span id ="three">
+						Fraternity Brother 
+							<span id = "period">
+							.
+							</span>
+						</span>
+						<span id ="four">
+						Percussionist 
+							<span id = "period">
+							.
+							</span>
+						</span>
+					</h3>
+				</div>
 			</center>
 
 			
 
-			<embed src="music/CHSTR.mp3" autostart="true" loop="true"
+			<embed src="redBone.mp3" autostart="true" loop="true"
 				width="2" height="0">
 			</embed>
 
-
 			<div id=bod>
 			</div>
+
+			<div id= projecttitle>
+				<center>
+					<h1 style="font-size:2em">
+						Projects
+					</h1>
+				</center>
+			</div>
+
+
+			<div id=bod1>
+			</div>
+
 			
+
+			<div class="container-fluid">
+				<div class="row equal">
+
+					<div class="col-xs-12 col-md-4">
+						<div class="panel panel-default">
+						  <div class="panel-heading">Medical Phantom</div>
+						  <div class="panel-body"> 
+						  	<div class = "hovereffect">
+							  	<img src="hand.jpg" class="img-responsive">
+							  	<div class="overlay">
+           							<h2>Hover effect 1</h2>
+       							</div>
+	        				</div>
+						  </div>
+					
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="panel panel-default">
+						  <div class="panel-heading">Paradiddles For Days</div>
+						  <div class="panel-body" >
+						  	<div class="embed-responsive embed-responsive-16by9">
+							  <iframe class="embed-responsive-item" src="https://www.youtube.com/v/_ODmJaM20Bs"></iframe>
+							</div>
+						   </div>
+						  
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="panel panel-default">
+						  <div class="panel-heading">UAV Computer Vision</div>
+						  <div class="panel-body"><!-- 16:9 aspect ratio -->
+							<div class = "hovereffect">
+							  	<img src="UAV.jpg" class="img-responsive">
+							  	<div class="overlay">
+           							<h2>Hover effect 1</h2>
+       							</div>
+	        				</div>
+						   </div>
+						  
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="row equal">
+
+					<div class="col-xs-12 col-md-4">
+						<div class="panel panel-default">
+						  <div class="panel-heading">MouseTrap Car</div>
+						  <div class="panel-body"> 
+						  	<div class = "hovereffect">
+							  	<img src="mouse1.jpg" class="img-responsive">
+							  	<div class="overlay">
+           							<h2>Hover effect 1</h2>
+       							</div>
+	        				</div>
+						  </div>
+						</div>
+					</div>
+				
+
+
+					<div class="col-xs-12 col-md-4">
+						<div class="panel panel-default">
+						  <div class="panel-heading">C0 Virtual Machine</div>
+						 	<div class="panel-body">
+								<div class = "hovereffect">
+							  	<img src="c0vm.jpg" class="img-responsive">
+							  	<div class="overlay">
+           							<h2>Hover effect 1</h2>
+       							</div>
+	        				</div>
+						  	</div>
+						 
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="panel panel-default">
+						  <div class="panel-heading">Garage Band VR</div>
+						  <div class="panel-body">
+								<div class = "hovereffect">
+							  	<img src="guitar.jpg" class="img-responsive">
+							  	<div class="overlay">
+           							<h2>Hover effect 1</h2>
+       							</div>
+	        				</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id=bod2>
+			</div>
+
+				
+			<center id = "abouttag">
+				<div>
+					<h1 style = "font-size:2em"> About</h1>
+				</div>
+
+				<div class="container">
+					<div class="jumbotron">
+						<img src="me1.jpg" class="img-circle" style="width:19%; height:20%">
+						<div id=bod1>
+						</div>
+			  			<p style = "font-style:normal">Hello, I am Hans Kumar! I am currently studying Mechanical Engineering at Carnegie Mellon University, but I also plan on also pursuing minors in Robotics and Biomedical Engineering. I am looking for opportunities to learn more about technology and its applications in diverse areas. In my free time I love finding new places to eat and playing the drums. Feel free to contact me if you are interested in my work or even if you just want to jam sometime! </p>
+		  			</div>
+				</div>
+			</center>
+
+			<div id=bod1>
+			</div>
+			<div id=bod1>
+			</div>
+
+
 		
 			<div id = bottom>
 				<div id = socialbox>
@@ -76,23 +250,12 @@
 			  		</a>
 			  	</div>
 			  	<center>
-				  	<p id=facts class=address>
-				  		CARNEGIE MELLON UNIVERSITY
-						SMC 5160
-						PITTSBURGH, PA 15289
-				  	</p>
-
-				  	<p id=facts>
-				  		Email: hansk@andrew.cmu
-				  	</p>
 				  	
 				  	<p id=facts>
-				  		Phone: 484-802-3730
+				  		hansk@andrew.cmu.edu &emsp; &emsp;  484.802.3730
 				  	</p>
-				  		
-				  	<p id=bootstrap>
-				  		Powered by Bootstrap
-				  	</p>		  		
+				
+				  			  		
 				</center>
 		  	</div>
 	</body>
