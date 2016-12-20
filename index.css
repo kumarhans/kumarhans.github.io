@@ -4,6 +4,11 @@
     Light Brown BFAF80
     Brown 8C6954     */
 
+#pop {
+	font-family: Oswald;
+	color: #F2EEB3;
+}
+
 .equal {
   display: -webkit-box;
   display: -moz-box;
@@ -251,7 +256,6 @@ transition:all .4s linear;
 }
 
 .hovereffect h2 {
-text-transform:uppercase;
 color:#fff;
 text-align:center;
 position:relative;
