@@ -1,12 +1,12 @@
 
 
 $(document).ready(function() {
-    $('.nav-tab').hover(function() {
-        $(this).animate({ fontSize: "4em" }, 100);
+    $('.popy').hover(function() {
+        $(this).animate({ fontSize: "3.5em" }, 100);
         $(this).parent().addClass("active");
     });
 
-    $('.nav-tab').mouseleave(function() {
+    $('.popy').mouseleave(function() {
     	$(this).animate({ fontSize: "3em" }, 100);
     	$(".nav").find(".active").removeClass("active");
     });
